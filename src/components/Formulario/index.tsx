@@ -1,9 +1,10 @@
 import Botao from '../Botao'
+import "./style.scss"
 
 export default function index() {
 	return (
-		<form>
-        <div>
+		<form className='novaTarefa'>
+        <div className='inputContainer'>
           <label htmlFor="tarefa">
             Adicione um novo estudo
           </label>
@@ -15,7 +16,7 @@ export default function index() {
             required
           />
         </div>
-        <div>
+        <div className='inputContainer'>
           <label htmlFor="tempo">
             Tempo
           </label>

@@ -1,7 +1,9 @@
-import React from 'react'
+import "./style.scss";
 
 export default function index() {
 	return (
-		<button>Botão</button>
+		<button className="botao">
+			Botão
+		</button>
 	)
 }
