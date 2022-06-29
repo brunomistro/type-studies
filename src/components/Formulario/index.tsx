@@ -30,7 +30,7 @@ export default function index() {
             required
           />
         </div>
-        <Botao />
+				<Botao texto="Adicionar" />
       </form>
 	)
 }
