@@ -1,11 +1,14 @@
 import style from "./Botao.module.scss";
 
-export default function Botao({ texto, type = "button" }: {
+interface Props {
 	texto: String,
-	type?: "button" | "submit" | "reset" | undefined
-}) {
+	type?: "button" | "submit" | "reset" | undefined,
+	onClick?: () => void
+}
+
+export default function Botao({ texto, type = "button", onClick }: Props) {
 	return (
-		<button type={type} className={style.botao}>
+		<button onClick={onClick} type={type} className={style.botao}>
 			{texto}
 		</button>
 	)
